@@ -33,7 +33,7 @@ public final class UI {
         boxLine("  |_| |_|\\___/|____/|_|   |___| |_/_/   \\_\\_____|");
         System.out.println("|" + " ".repeat(WIDTH - 2) + "|");
         boxLine("HOSPITAL MANAGEMENT SYSTEM", true);
-        boxLine("RIPHAH INTERNATIONAL UNIVERSITY", true);
+        boxLine("CAREPOINT HOSPITAL SERVICES", true);
         boxLine("Java Object-Oriented Programming Project", true);
         System.out.println("|" + " ".repeat(WIDTH - 2) + "|");
         System.out.println("+" + "=".repeat(WIDTH - 2) + "+");

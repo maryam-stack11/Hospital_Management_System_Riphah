@@ -119,6 +119,47 @@ public class AppointmentManager {
         onChange.run();
     }
 
+    public void updateSchedule(String id, LocalDate date, LocalTime time) throws HospitalException {
+        Appointment appointment = require(id);
+        if (!appointment.isActive()) {
+            throw new HospitalException("Only Scheduled appointments can be edited.");
+        }
+        if (date == null || time == null || LocalDateTime.of(date, time).isBefore(LocalDateTime.now())) {
+            throw new HospitalException("Appointments cannot be booked in the past.");
+        }
+        Doctor doctor = appointment.getDoctor();
+        if (!doctor.isAvailable()) throw new HospitalException(doctor.getName() + " is currently unavailable.");
+        int scheduledForDoctor = 0;
+        for (Appointment other : appointments) {
+            if (other == appointment || !other.isActive()) continue;
+            if (other.isAt(date, time)) {
+                if (other.getDoctor() == doctor) {
+                    throw new HospitalException("Doctor " + doctor.getId()
+                            + " already has a scheduled appointment on " + date + " at " + time + ".");
+                }
+                if (other.getPatient() == appointment.getPatient()) {
+                    throw new HospitalException("Patient " + appointment.getPatient().getId()
+                            + " already has a scheduled appointment on " + date + " at " + time + ".");
+                }
+            }
+            if (other.getDoctor() == doctor && other.getDate().equals(date)) scheduledForDoctor++;
+        }
+        if (scheduledForDoctor >= Doctor.MAX_DAILY_APPOINTMENTS) {
+            throw new HospitalException("Doctor " + doctor.getId() + " is fully booked on " + date + ".");
+        }
+        appointment.updateSchedule(date, time);
+        onChange.run();
+    }
+
+    public void deleteCancelledAppointment(String id) throws HospitalException {
+        Appointment appointment = require(id);
+        if (appointment.getStatus() != Appointment.Status.CANCELLED) {
+            throw new HospitalException("Only cancelled appointments can be deleted. Cancel scheduled appointments first; completed records are retained.");
+        }
+        appointments.remove(appointment);
+        onChange.run();
+    }
+
     // ---- helpers used by Patient/Doctor managers and availability logic
 
     public int countActiveForPatient(String patientId) {

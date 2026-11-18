@@ -27,8 +27,8 @@ public class Appointment {
     private final String id;
     private final Patient patient;
     private final Doctor doctor;
-    private final LocalDate date;
-    private final LocalTime time;
+    private LocalDate date;
+    private LocalTime time;
     private Status status;
 
     public Appointment(String id, Patient patient, Doctor doctor,
@@ -52,6 +52,11 @@ public class Appointment {
     public boolean isActive() { return status == Status.SCHEDULED; }
 
     public boolean isAt(LocalDate d, LocalTime t) { return date.equals(d) && time.equals(t); }
+
+    void updateSchedule(LocalDate date, LocalTime time) {
+        this.date = date;
+        this.time = time;
+    }
 
     public void markCompleted() throws HospitalException {
         if (status != Status.SCHEDULED) {

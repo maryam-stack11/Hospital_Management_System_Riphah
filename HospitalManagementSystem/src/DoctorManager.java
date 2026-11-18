@@ -8,7 +8,8 @@ import java.util.List;
 public class DoctorManager {
     public static final String[] SPECIALIZATIONS = {
         "Cardiologist", "Neurologist", "Dermatologist",
-        "General Physician", "Pediatrician", "Orthopedic Surgeon"
+        "General Physician", "Pediatrician", "Orthopedic Surgeon",
+        "Gynecologist", "Dentist"
     };
 
     private final ArrayList<Doctor> doctors = new ArrayList<>();

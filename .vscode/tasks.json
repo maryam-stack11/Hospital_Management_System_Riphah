@@ -1,0 +1,51 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile Hospital Management System",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "-encoding",
+                "UTF-8",
+                "-d",
+                "${workspaceFolder}/HospitalManagementSystem/out",
+                "${workspaceFolder}/HospitalManagementSystem/src/*.java"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}/HospitalManagementSystem"
+            },
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Hospital Tests",
+            "type": "shell",
+            "command": "${workspaceFolder}/HospitalManagementSystem/tests/run_tests.bat",
+            "options": {
+                "cwd": "${workspaceFolder}/HospitalManagementSystem"
+            },
+            "problemMatcher": [],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "focus": true
+            }
+        },
+        {
+            "label": "Run Hospital Management System",
+            "type": "shell",
+            "command": "${workspaceFolder}/HospitalManagementSystem/run.bat",
+            "options": {
+                "cwd": "${workspaceFolder}/HospitalManagementSystem"
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "focus": true
+            }
+        }
+    ]
+}

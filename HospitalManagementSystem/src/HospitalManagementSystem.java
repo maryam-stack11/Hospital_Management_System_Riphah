@@ -25,6 +25,12 @@ public class HospitalManagementSystem {
         dataManager.loadAll(patientManager, doctorManager, appointmentManager, billingManager);
     }
 
+    public PatientManager getPatientManager() { return patientManager; }
+    public DoctorManager getDoctorManager() { return doctorManager; }
+    public AppointmentManager getAppointmentManager() { return appointmentManager; }
+    public BillingManager getBillingManager() { return billingManager; }
+    public void saveData() { save(); }
+
     private void save() {
         dataManager.saveAll(patientManager, doctorManager, appointmentManager, billingManager);
     }

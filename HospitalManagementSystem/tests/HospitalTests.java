@@ -73,6 +73,9 @@ public class HospitalTests {
         Doctor d1 = s.dm.addDoctor("Dr. Ahmed Raza", "Cardiologist", "03001234501", new BigDecimal("3000"));
         Doctor d2 = s.dm.addDoctor("Dr. Sana Malik", "Neurologist", "03001234502", new BigDecimal("2500.50"));
         check("Doctor IDs generated", d1.getId().equals("D001") && d2.getId().equals("D002"));
+        check("Gynecologist and Dentist specializations available",
+                java.util.Arrays.asList(DoctorManager.SPECIALIZATIONS).contains("Gynecologist")
+                        && java.util.Arrays.asList(DoctorManager.SPECIALIZATIONS).contains("Dentist"));
         expectError("Reject zero fee", () -> s.dm.addDoctor("Dr. Zero", "Cardiologist", "03001234501", BigDecimal.ZERO));
         check("Search by specialization", s.dm.searchBySpecialization("cardio").size() == 1);
         check("Doctor available by default", d1.isAvailable());
@@ -87,6 +90,11 @@ public class HospitalTests {
         expectError("Past date rejected", () -> s.am.bookAppointment("P002", "D001", LocalDate.now().minusDays(1), T10));
         Appointment other = s.am.bookAppointment("P002", "D001", FUTURE, LocalTime.of(11, 0));
         check("Different time for same doctor allowed", other != null);
+        s.am.updateSchedule(other.getId(), FUTURE, LocalTime.of(11, 30));
+        check("Scheduled appointment time can be edited", other.getTime().equals(LocalTime.of(11, 30)));
+        expectError("Cannot edit appointment into the past",
+                () -> s.am.updateSchedule(other.getId(), LocalDate.now().minusDays(1), T10));
+        s.am.updateSchedule(other.getId(), FUTURE, LocalTime.of(11, 0));
         s.am.cancelAppointment("A001");
         check("Cancelled status set", a1.getStatus() == Appointment.Status.CANCELLED);
         check("Cancelled appointment is not active", !a1.isActive() && s.am.countActiveForPatient("P001") == 0);
@@ -135,8 +143,13 @@ public class HospitalTests {
         check("Paid status", b1.getPaymentStatus() == Billing.PaymentStatus.PAID);
         check("Revenue from paid bills", s.bm.getRevenueFromPaidBills().compareTo(new BigDecimal("3000.10")) == 0
                 && s.bm.getOutstandingBalance().signum() == 0);
+        expectError("Cannot delete bill with a recorded payment", () -> s.bm.deleteUnpaidBill("B001"));
         s.bm.markUnpaid("B001");
         check("Back to Unpaid", b1.getPaymentStatus() == Billing.PaymentStatus.UNPAID);
+        s.bm.updateAdditionalCharges("B001", new BigDecimal("0.20"));
+        check("Additional bill charges can be edited",
+                b1.getTotalAmount().compareTo(new BigDecimal("3000.20")) == 0);
+        s.bm.updateAdditionalCharges("B001", new BigDecimal("0.10"));
         check("Billing history by patient", s.bm.findByPatient("P002").size() == 1);
 
         System.out.println("== Delete rules ==");
@@ -173,6 +186,10 @@ public class HospitalTests {
         Sys s4 = new Sys(tmp.toString());
         Doctor fresh = s4.dm.addDoctor("Dr. New Doc", "Pediatrician", "03001234509", new BigDecimal("1200"));
         check("ID sequence continues after reload (D002 free after D002 deleted)", fresh.getId().equals("D002"));
+        s.bm.deleteUnpaidBill("B001");
+        check("Unpaid bill can be deleted", s.bm.findById("B001") == null);
+        s.am.deleteCancelledAppointment("A001");
+        check("Cancelled appointment can be deleted", s.am.findById("A001") == null);
 
         System.out.println("== Corrupted / missing files ==");
         Path bad = Files.createTempDirectory("hms_bad");

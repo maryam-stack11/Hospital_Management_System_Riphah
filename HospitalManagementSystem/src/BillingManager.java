@@ -106,6 +106,20 @@ public class BillingManager {
         onChange.run();
     }
 
+    public void updateAdditionalCharges(String billId, BigDecimal charges) throws HospitalException {
+        requireBill(billId).updateAdditionalCharges(charges);
+        onChange.run();
+    }
+
+    public void deleteUnpaidBill(String billId) throws HospitalException {
+        Billing bill = requireBill(billId);
+        if (bill.getAmountPaid().signum() != 0) {
+            throw new HospitalException("A bill with recorded payments cannot be deleted.");
+        }
+        bills.remove(bill);
+        onChange.run();
+    }
+
     private Billing requireBill(String id) throws HospitalException {
         Billing b = findById(id);
         if (b == null) throw new HospitalException("No bill found with ID " + id + ".");

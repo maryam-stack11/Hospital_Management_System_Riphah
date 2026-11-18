@@ -20,7 +20,7 @@ public class Billing {
     private final String patientId;
     private final String appointmentId;
     private final BigDecimal consultationFee;
-    private final BigDecimal additionalCharges;
+    private BigDecimal additionalCharges;
     private BigDecimal amountPaid;
 
     public Billing(String id, String patientId, String appointmentId,
@@ -43,6 +43,17 @@ public class Billing {
     public BigDecimal getTotalAmount() { return consultationFee.add(additionalCharges); }
 
     public BigDecimal getBalance() { return getTotalAmount().subtract(amountPaid); }
+
+    void updateAdditionalCharges(BigDecimal charges) throws HospitalException {
+        if (charges == null || charges.signum() < 0) {
+            throw new HospitalException("Additional charges cannot be negative.");
+        }
+        BigDecimal normalized = charges.setScale(2, java.math.RoundingMode.HALF_UP);
+        if (normalized.add(consultationFee).compareTo(amountPaid) < 0) {
+            throw new HospitalException("New total cannot be less than the amount already paid.");
+        }
+        additionalCharges = normalized;
+    }
 
     /** The status is derived from the amount paid, so it can never be inconsistent. */
     public PaymentStatus getPaymentStatus() {
