@@ -1,0 +1,7 @@
+id,name,specialization,contact,fee,available
+D001,Dr. Ahmed Raza,Cardiologist,03001234501,3000.00,true
+D002,Dr. Sana Malik,Neurologist,03001234502,3500.00,true
+D003,Dr. Hina Farooq,Dermatologist,03001234503,2000.00,true
+D004,Dr. Usman Tariq,General Physician,03001234504,1000.00,true
+D005,Dr. Ayesha Khan,Pediatrician,03001234505,1500.00,true
+D006,Dr. Bilal Hussain,Orthopedic Surgeon,03001234506,3200.00,true

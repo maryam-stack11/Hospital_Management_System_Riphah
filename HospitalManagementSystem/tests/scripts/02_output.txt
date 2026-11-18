@@ -1,0 +1,281 @@
+
++==============================================================+
+|                                                              |
+|   _   _  ___  ____  ____  ___ _____  _    _                  |
+|  | | | |/ _ \/ ___||  _ \|_ _|_   _|/ \  | |                 |
+|  | |_| | | | \___ \| |_) || |  | | / _ \ | |                 |
+|  |  _  | |_| |___) |  __/ | |  | |/ ___ \| |___              |
+|  |_| |_|\___/|____/|_|   |___| |_/_/   \_\_____|             |
+|                                                              |
+|                  HOSPITAL MANAGEMENT SYSTEM                  |
+|               RIPHAH INTERNATIONAL UNIVERSITY                |
+|           Java Object-Oriented Programming Project           |
+|                                                              |
++==============================================================+
+Loaded: 2 patient(s), 6 doctor(s), 3 appointment(s), 1 bill(s).
+
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                          ALL PATIENTS
+================================================================
+ID     Name                   Age  Gender  Contact         Condition               
+------------------------------------------------------------------------------
+P001   Ali Khan               30   Male    03001234567     Fever                   
+P002   Sara Ahmed Khan        9    Female  03111234567     Checkup                 
+------------------------------------------------------------------------------
+Total: 2 patient(s)
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                     DELETE PATIENT RECORD
+================================================================
+Enter patient ID: ------------------------------------------------------------------------------
+  Patient ID              : P001
+  Name                    : Ali Khan
+  Contact Number          : 03001234567
+  Age                     : 30 (Adult)
+  Gender                  : Male
+  Address                 : House 5, Street 2
+  Condition/Reason        : Fever
+------------------------------------------------------------------------------
+
+[WARNING] This patient has 1 active appointment(s).
+Cancel those appointments and delete the patient? (y/n): 
+[SUCCESS] Patient P001 deleted.
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                     DELETE PATIENT RECORD
+================================================================
+Enter patient ID: 
+[ERROR] Patient P002 has completed appointments/billing history and cannot be deleted (records must be kept).
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                          ALL PATIENTS
+================================================================
+ID     Name                   Age  Gender  Contact         Condition               
+------------------------------------------------------------------------------
+P002   Sara Ahmed Khan        9    Female  03111234567     Checkup                 
+------------------------------------------------------------------------------
+Total: 1 patient(s)
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                        ALL APPOINTMENTS
+================================================================
+ID     Patient                  Doctor                   Date        Time   Status    
+------------------------------------------------------------------------------
+A002   P002 Sara Ahmed Khan     D002 Dr. Sana Malik      2030-01-15  11:00  Completed 
+------------------------------------------------------------------------------
+Total: 1 appointment(s)
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                           ALL BILLS
+================================================================
+Bill   Patient Appt    Fee           Extra         Total          Paid           Status        
+------------------------------------------------------------------------------
+B001   P002    A002    Rs. 3500.00   Rs. 500.00    Rs. 4000.00    Rs. 4000.00    Paid          
+------------------------------------------------------------------------------
+Total: 1 bill(s)
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                    PATIENT BILLING HISTORY
+================================================================
+Patient ID: Patient: P002 - Sara Ahmed Khan
+Bill   Patient Appt    Fee           Extra         Total          Paid           Status        
+------------------------------------------------------------------------------
+B001   P002    A002    Rs. 3500.00   Rs. 500.00    Rs. 4000.00    Rs. 4000.00    Paid          
+------------------------------------------------------------------------------
+Total: 1 bill(s)
+  Total billed            : Rs. 4000.00
+  Outstanding             : Rs. 0.00
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                      HOSPITAL STATISTICS
+================================================================
+  Total patients          : 1
+  Total doctors           : 6
+  Total appointments      : 1
+    Scheduled             : 0
+    Completed             : 1
+    Cancelled             : 0
+  Total bills generated   : 1
+  Revenue (paid bills)    : Rs. 4000.00
+  Partial payments held   : Rs. 0.00
+  Outstanding balance     : Rs. 0.00
+================================================================
+
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                 THANK YOU FOR USING THE SYSTEM
+================================================================
+All data has been saved. Goodbye!

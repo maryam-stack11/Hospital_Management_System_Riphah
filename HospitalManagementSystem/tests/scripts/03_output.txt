@@ -1,0 +1,45 @@
+
++==============================================================+
+|                                                              |
+|   _   _  ___  ____  ____  ___ _____  _    _                  |
+|  | | | |/ _ \/ ___||  _ \|_ _|_   _|/ \  | |                 |
+|  | |_| | | | \___ \| |_) || |  | | / _ \ | |                 |
+|  |  _  | |_| |___) |  __/ | |  | |/ ___ \| |___              |
+|  |_| |_|\___/|____/|_|   |___| |_/_/   \_\_____|             |
+|                                                              |
+|                  HOSPITAL MANAGEMENT SYSTEM                  |
+|               RIPHAH INTERNATIONAL UNIVERSITY                |
+|           Java Object-Oriented Programming Project           |
+|                                                              |
++==============================================================+
+Loaded: 1 patient(s), 6 doctor(s), 1 appointment(s), 1 bill(s).
+
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+[WARNING] Input ended unexpectedly. Saving data and exiting.
+
+================================================================
+                 THANK YOU FOR USING THE SYSTEM
+================================================================
+All data has been saved. Goodbye!

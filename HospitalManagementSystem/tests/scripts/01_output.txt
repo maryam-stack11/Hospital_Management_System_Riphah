@@ -1,0 +1,1326 @@
+
++==============================================================+
+|                                                              |
+|   _   _  ___  ____  ____  ___ _____  _    _                  |
+|  | | | |/ _ \/ ___||  _ \|_ _|_   _|/ \  | |                 |
+|  | |_| | | | \___ \| |_) || |  | | / _ \ | |                 |
+|  |  _  | |_| |___) |  __/ | |  | |/ ___ \| |___              |
+|  |_| |_|\___/|____/|_|   |___| |_/_/   \_\_____|             |
+|                                                              |
+|                  HOSPITAL MANAGEMENT SYSTEM                  |
+|               RIPHAH INTERNATIONAL UNIVERSITY                |
+|           Java Object-Oriented Programming Project           |
+|                                                              |
++==============================================================+
+Loaded: 0 patient(s), 6 doctor(s), 0 appointment(s), 0 bill(s).
+
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+[ERROR] Invalid choice. Please enter a number between 1 and 6.
+Enter your choice: 
+[ERROR] Invalid choice. Please enter a number between 1 and 6.
+Enter your choice: 
+[ERROR] Invalid choice. Please enter a number between 1 and 6.
+Enter your choice: 
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      REGISTER NEW PATIENT
+================================================================
+Full name: Age: 
+[ERROR] Age must be a whole number between 0 and 120.
+Age: 
+[ERROR] Age must be a whole number between 0 and 120.
+Age: Gender (Male/Female/Other): 
+[ERROR] Enter Male, Female or Other (M/F/O).
+Gender (Male/Female/Other): Contact number: 
+[ERROR] Enter 10-13 digits with an optional leading '+' (e.g. 03001234567).
+Contact number: Address: 
+[ERROR] Address must be 3-100 characters.
+Address: Medical condition / reason for visit: 
+[SUCCESS] Patient registered with ID P001.
+------------------------------------------------------------------------------
+  Patient ID              : P001
+  Name                    : Ali Khan
+  Contact Number          : 03001234567
+  Age                     : 30 (Adult)
+  Gender                  : Male
+  Address                 : House 5, Street 2
+  Condition/Reason        : Fever
+------------------------------------------------------------------------------
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      REGISTER NEW PATIENT
+================================================================
+Full name: Age: Gender (Male/Female/Other): Contact number: Address: Medical condition / reason for visit: 
+[SUCCESS] Patient registered with ID P002.
+------------------------------------------------------------------------------
+  Patient ID              : P002
+  Name                    : Sara Ahmed
+  Contact Number          : 03111234567
+  Age                     : 8 (Child)
+  Gender                  : Female
+  Address                 : Lahore
+  Condition/Reason        : Checkup
+------------------------------------------------------------------------------
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                          ALL PATIENTS
+================================================================
+ID     Name                   Age  Gender  Contact         Condition               
+------------------------------------------------------------------------------
+P001   Ali Khan               30   Male    03001234567     Fever                   
+P002   Sara Ahmed             8    Female  03111234567     Checkup                 
+------------------------------------------------------------------------------
+Total: 2 patient(s)
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      SEARCH PATIENT BY ID
+================================================================
+Enter patient ID (e.g. P001): ------------------------------------------------------------------------------
+  Patient ID              : P001
+  Name                    : Ali Khan
+  Contact Number          : 03001234567
+  Age                     : 30 (Adult)
+  Gender                  : Male
+  Address                 : House 5, Street 2
+  Condition/Reason        : Fever
+------------------------------------------------------------------------------
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      SEARCH PATIENT BY ID
+================================================================
+Enter patient ID (e.g. P001): 
+[ERROR] No patient found with ID P999.
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                     SEARCH PATIENT BY NAME
+================================================================
+Enter name (or part of it): ID     Name                   Age  Gender  Contact         Condition               
+------------------------------------------------------------------------------
+P001   Ali Khan               30   Male    03001234567     Fever                   
+------------------------------------------------------------------------------
+Total: 1 patient(s)
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                     SEARCH PATIENT BY NAME
+================================================================
+Enter name (or part of it): 
+[INFO] No patients match "zzz".
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                   UPDATE PATIENT INFORMATION
+================================================================
+Enter patient ID: ------------------------------------------------------------------------------
+  Patient ID              : P002
+  Name                    : Sara Ahmed
+  Contact Number          : 03111234567
+  Age                     : 8 (Child)
+  Gender                  : Female
+  Address                 : Lahore
+  Condition/Reason        : Checkup
+------------------------------------------------------------------------------
+
+[INFO] Press Enter to keep the current value of any field.
+Full name [Sara Ahmed] (Enter to keep): Age [8] (Enter to keep): Gender (Male/Female/Other) [Female] (Enter to keep): Contact number [03111234567] (Enter to keep): Address [Lahore] (Enter to keep): Medical condition [Checkup] (Enter to keep): 
+[SUCCESS] Patient P002 updated.
+------------------------------------------------------------------------------
+  Patient ID              : P002
+  Name                    : Sara Ahmed Khan
+  Contact Number          : 03111234567
+  Age                     : 9 (Child)
+  Gender                  : Female
+  Address                 : Lahore
+  Condition/Reason        : Checkup
+------------------------------------------------------------------------------
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                     DELETE PATIENT RECORD
+================================================================
+Enter patient ID: ------------------------------------------------------------------------------
+  Patient ID              : P002
+  Name                    : Sara Ahmed Khan
+  Contact Number          : 03111234567
+  Age                     : 9 (Child)
+  Gender                  : Female
+  Address                 : Lahore
+  Condition/Reason        : Checkup
+------------------------------------------------------------------------------
+Are you sure you want to delete this patient? (y/n): 
+[INFO] Deletion aborted. No changes made.
+
+================================================================
+                       PATIENT MANAGEMENT
+================================================================
+  [1] Register New Patient
+  [2] View All Patients
+  [3] Search Patient by ID
+  [4] Search Patient by Name
+  [5] Update Patient Information
+  [6] Delete Patient Record
+  [7] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                       DOCTOR MANAGEMENT
+================================================================
+  [1] Add New Doctor
+  [2] View All Doctors
+  [3] Search Doctor by ID
+  [4] Search Doctor by Specialization
+  [5] Update Doctor Information
+  [6] Delete Doctor Record
+  [7] View Doctor Availability
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                         ADD NEW DOCTOR
+================================================================
+Full name:   [1] Cardiologist
+  [2] Neurologist
+  [3] Dermatologist
+  [4] General Physician
+  [5] Pediatrician
+  [6] Orthopedic Surgeon
+  [7] Other (type your own)
+Specialization number: Specialization name: Contact number: Consultation fee (Rs.): 
+[SUCCESS] Doctor added with ID D007.
+------------------------------------------------------------------------------
+  Doctor ID               : D007
+  Name                    : Dr. Test Doc
+  Contact Number          : 03001234510
+  Specialization          : Radiologist
+  Consultation Fee        : Rs. 1800.00
+  Availability            : Available
+------------------------------------------------------------------------------
+
+================================================================
+                       DOCTOR MANAGEMENT
+================================================================
+  [1] Add New Doctor
+  [2] View All Doctors
+  [3] Search Doctor by ID
+  [4] Search Doctor by Specialization
+  [5] Update Doctor Information
+  [6] Delete Doctor Record
+  [7] View Doctor Availability
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                          ALL DOCTORS
+================================================================
+ID     Name                   Specialization       Contact         Fee            Status     
+------------------------------------------------------------------------------
+D001   Dr. Ahmed Raza         Cardiologist         03001234501     Rs. 3000.00    Available  
+D002   Dr. Sana Malik         Neurologist          03001234502     Rs. 3500.00    Available  
+D003   Dr. Hina Farooq        Dermatologist        03001234503     Rs. 2000.00    Available  
+D004   Dr. Usman Tariq        General Physician    03001234504     Rs. 1000.00    Available  
+D005   Dr. Ayesha Khan        Pediatrician         03001234505     Rs. 1500.00    Available  
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   03001234506     Rs. 3200.00    Available  
+D007   Dr. Test Doc           Radiologist          03001234510     Rs. 1800.00    Available  
+------------------------------------------------------------------------------
+Total: 7 doctor(s)
+
+================================================================
+                       DOCTOR MANAGEMENT
+================================================================
+  [1] Add New Doctor
+  [2] View All Doctors
+  [3] Search Doctor by ID
+  [4] Search Doctor by Specialization
+  [5] Update Doctor Information
+  [6] Delete Doctor Record
+  [7] View Doctor Availability
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      SEARCH DOCTOR BY ID
+================================================================
+Enter doctor ID (e.g. D001): ------------------------------------------------------------------------------
+  Doctor ID               : D001
+  Name                    : Dr. Ahmed Raza
+  Contact Number          : 03001234501
+  Specialization          : Cardiologist
+  Consultation Fee        : Rs. 3000.00
+  Availability            : Available
+------------------------------------------------------------------------------
+
+================================================================
+                       DOCTOR MANAGEMENT
+================================================================
+  [1] Add New Doctor
+  [2] View All Doctors
+  [3] Search Doctor by ID
+  [4] Search Doctor by Specialization
+  [5] Update Doctor Information
+  [6] Delete Doctor Record
+  [7] View Doctor Availability
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                SEARCH DOCTOR BY SPECIALIZATION
+================================================================
+Enter specialization (or part of it): ID     Name                   Specialization       Contact         Fee            Status     
+------------------------------------------------------------------------------
+D001   Dr. Ahmed Raza         Cardiologist         03001234501     Rs. 3000.00    Available  
+------------------------------------------------------------------------------
+Total: 1 doctor(s)
+
+================================================================
+                       DOCTOR MANAGEMENT
+================================================================
+  [1] Add New Doctor
+  [2] View All Doctors
+  [3] Search Doctor by ID
+  [4] Search Doctor by Specialization
+  [5] Update Doctor Information
+  [6] Delete Doctor Record
+  [7] View Doctor Availability
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                   UPDATE DOCTOR INFORMATION
+================================================================
+Enter doctor ID: ------------------------------------------------------------------------------
+  Doctor ID               : D006
+  Name                    : Dr. Bilal Hussain
+  Contact Number          : 03001234506
+  Specialization          : Orthopedic Surgeon
+  Consultation Fee        : Rs. 3200.00
+  Availability            : Available
+------------------------------------------------------------------------------
+
+[INFO] Press Enter to keep the current value of any field.
+Full name [Dr. Bilal Hussain] (Enter to keep):   [1] Cardiologist
+  [2] Neurologist
+  [3] Dermatologist
+  [4] General Physician
+  [5] Pediatrician
+  [6] Orthopedic Surgeon
+  [7] Other (type your own)
+Specialization number [Orthopedic Surgeon] (Enter to keep): Contact number [03001234506] (Enter to keep): Consultation fee (Rs.) [3200.00] (Enter to keep): 
+[ERROR] Invalid amount. Enter a non-negative number with at most 2 decimals.
+Consultation fee (Rs.) [3200.00] (Enter to keep): Is the doctor available for appointments (currently Available)? (y/n): 
+[SUCCESS] Doctor D006 updated.
+------------------------------------------------------------------------------
+  Doctor ID               : D006
+  Name                    : Dr. Bilal Hussain
+  Contact Number          : 03001234506
+  Specialization          : Orthopedic Surgeon
+  Consultation Fee        : Rs. 3300.00
+  Availability            : Unavailable
+------------------------------------------------------------------------------
+
+================================================================
+                       DOCTOR MANAGEMENT
+================================================================
+  [1] Add New Doctor
+  [2] View All Doctors
+  [3] Search Doctor by ID
+  [4] Search Doctor by Specialization
+  [5] Update Doctor Information
+  [6] Delete Doctor Record
+  [7] View Doctor Availability
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      DOCTOR AVAILABILITY
+================================================================
+Date checked: 2026-11-18  (max 8 patients/day)
+ID     Name                   Specialization       Status today           Upcoming 
+------------------------------------------------------------------------------
+D001   Dr. Ahmed Raza         Cardiologist         Available (8 slots le~ 0        
+D002   Dr. Sana Malik         Neurologist          Available (8 slots le~ 0        
+D003   Dr. Hina Farooq        Dermatologist        Available (8 slots le~ 0        
+D004   Dr. Usman Tariq        General Physician    Available (8 slots le~ 0        
+D005   Dr. Ayesha Khan        Pediatrician         Available (8 slots le~ 0        
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   Unavailable            0        
+D007   Dr. Test Doc           Radiologist          Available (8 slots le~ 0        
+------------------------------------------------------------------------------
+Enter a doctor ID for their schedule (or press Enter to go back): 
+================================================================
+                       DOCTOR MANAGEMENT
+================================================================
+  [1] Add New Doctor
+  [2] View All Doctors
+  [3] Search Doctor by ID
+  [4] Search Doctor by Specialization
+  [5] Update Doctor Information
+  [6] Delete Doctor Record
+  [7] View Doctor Availability
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      DOCTOR AVAILABILITY
+================================================================
+Date checked: 2026-11-18  (max 8 patients/day)
+ID     Name                   Specialization       Status today           Upcoming 
+------------------------------------------------------------------------------
+D001   Dr. Ahmed Raza         Cardiologist         Available (8 slots le~ 0        
+D002   Dr. Sana Malik         Neurologist          Available (8 slots le~ 0        
+D003   Dr. Hina Farooq        Dermatologist        Available (8 slots le~ 0        
+D004   Dr. Usman Tariq        General Physician    Available (8 slots le~ 0        
+D005   Dr. Ayesha Khan        Pediatrician         Available (8 slots le~ 0        
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   Unavailable            0        
+D007   Dr. Test Doc           Radiologist          Available (8 slots le~ 0        
+------------------------------------------------------------------------------
+Enter a doctor ID for their schedule (or press Enter to go back): 
+================================================================
+                   SCHEDULE - Dr. Ahmed Raza
+================================================================
+
+[INFO] No scheduled appointments for this doctor.
+
+================================================================
+                       DOCTOR MANAGEMENT
+================================================================
+  [1] Add New Doctor
+  [2] View All Doctors
+  [3] Search Doctor by ID
+  [4] Search Doctor by Specialization
+  [5] Update Doctor Information
+  [6] Delete Doctor Record
+  [7] View Doctor Availability
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      DELETE DOCTOR RECORD
+================================================================
+Enter doctor ID: ------------------------------------------------------------------------------
+  Doctor ID               : D007
+  Name                    : Dr. Test Doc
+  Contact Number          : 03001234510
+  Specialization          : Radiologist
+  Consultation Fee        : Rs. 1800.00
+  Availability            : Available
+------------------------------------------------------------------------------
+Are you sure you want to delete this doctor? (y/n): 
+[SUCCESS] Doctor D007 deleted.
+
+================================================================
+                       DOCTOR MANAGEMENT
+================================================================
+  [1] Add New Doctor
+  [2] View All Doctors
+  [3] Search Doctor by ID
+  [4] Search Doctor by Specialization
+  [5] Update Doctor Information
+  [6] Delete Doctor Record
+  [7] View Doctor Availability
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      BOOK NEW APPOINTMENT
+================================================================
+Patient ID: Patient: Ali Khan
+
+Doctors:
+ID     Name                   Specialization       Contact         Fee            Status     
+D001   Dr. Ahmed Raza         Cardiologist         03001234501     Rs. 3000.00    Available  
+D002   Dr. Sana Malik         Neurologist          03001234502     Rs. 3500.00    Available  
+D003   Dr. Hina Farooq        Dermatologist        03001234503     Rs. 2000.00    Available  
+D004   Dr. Usman Tariq        General Physician    03001234504     Rs. 1000.00    Available  
+D005   Dr. Ayesha Khan        Pediatrician         03001234505     Rs. 1500.00    Available  
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   03001234506     Rs. 3300.00    Unavailable
+Doctor ID: Appointment date (YYYY-MM-DD): Appointment time (HH:MM, 24-hour): 
+[SUCCESS] Appointment booked.
+------------------------------------------------------------------------------
+  Appointment ID          : A001
+  Patient                 : P001 - Ali Khan
+  Doctor                  : D001 - Dr. Ahmed Raza (Cardiologist)
+  Date                    : 2030-01-15
+  Time                    : 10:00
+  Status                  : Scheduled
+------------------------------------------------------------------------------
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      BOOK NEW APPOINTMENT
+================================================================
+Patient ID: Patient: Sara Ahmed Khan
+
+Doctors:
+ID     Name                   Specialization       Contact         Fee            Status     
+D001   Dr. Ahmed Raza         Cardiologist         03001234501     Rs. 3000.00    Available  
+D002   Dr. Sana Malik         Neurologist          03001234502     Rs. 3500.00    Available  
+D003   Dr. Hina Farooq        Dermatologist        03001234503     Rs. 2000.00    Available  
+D004   Dr. Usman Tariq        General Physician    03001234504     Rs. 1000.00    Available  
+D005   Dr. Ayesha Khan        Pediatrician         03001234505     Rs. 1500.00    Available  
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   03001234506     Rs. 3300.00    Unavailable
+Doctor ID: Appointment date (YYYY-MM-DD): 
+[ERROR] Invalid date format. Use YYYY-MM-DD (e.g. 2027-03-15).
+Appointment date (YYYY-MM-DD): Appointment time (HH:MM, 24-hour): 
+[ERROR] Invalid time. Hours must be 00-23 and minutes 00-59.
+Appointment time (HH:MM, 24-hour): 
+[ERROR] Doctor D001 already has a scheduled appointment on 2030-01-15 at 10:00.
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      BOOK NEW APPOINTMENT
+================================================================
+Patient ID: Patient: Ali Khan
+
+Doctors:
+ID     Name                   Specialization       Contact         Fee            Status     
+D001   Dr. Ahmed Raza         Cardiologist         03001234501     Rs. 3000.00    Available  
+D002   Dr. Sana Malik         Neurologist          03001234502     Rs. 3500.00    Available  
+D003   Dr. Hina Farooq        Dermatologist        03001234503     Rs. 2000.00    Available  
+D004   Dr. Usman Tariq        General Physician    03001234504     Rs. 1000.00    Available  
+D005   Dr. Ayesha Khan        Pediatrician         03001234505     Rs. 1500.00    Available  
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   03001234506     Rs. 3300.00    Unavailable
+Doctor ID: Appointment date (YYYY-MM-DD): Appointment time (HH:MM, 24-hour): 
+[ERROR] Patient P001 already has a scheduled appointment on 2030-01-15 at 10:00.
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      BOOK NEW APPOINTMENT
+================================================================
+Patient ID: Patient: Ali Khan
+
+Doctors:
+ID     Name                   Specialization       Contact         Fee            Status     
+D001   Dr. Ahmed Raza         Cardiologist         03001234501     Rs. 3000.00    Available  
+D002   Dr. Sana Malik         Neurologist          03001234502     Rs. 3500.00    Available  
+D003   Dr. Hina Farooq        Dermatologist        03001234503     Rs. 2000.00    Available  
+D004   Dr. Usman Tariq        General Physician    03001234504     Rs. 1000.00    Available  
+D005   Dr. Ayesha Khan        Pediatrician         03001234505     Rs. 1500.00    Available  
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   03001234506     Rs. 3300.00    Unavailable
+Doctor ID: Appointment date (YYYY-MM-DD): Appointment time (HH:MM, 24-hour): 
+[ERROR] Appointments cannot be booked in the past.
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      BOOK NEW APPOINTMENT
+================================================================
+Patient ID: 
+[ERROR] Patient P999 does not exist. Register the patient first.
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      BOOK NEW APPOINTMENT
+================================================================
+Patient ID: Patient: Sara Ahmed Khan
+
+Doctors:
+ID     Name                   Specialization       Contact         Fee            Status     
+D001   Dr. Ahmed Raza         Cardiologist         03001234501     Rs. 3000.00    Available  
+D002   Dr. Sana Malik         Neurologist          03001234502     Rs. 3500.00    Available  
+D003   Dr. Hina Farooq        Dermatologist        03001234503     Rs. 2000.00    Available  
+D004   Dr. Usman Tariq        General Physician    03001234504     Rs. 1000.00    Available  
+D005   Dr. Ayesha Khan        Pediatrician         03001234505     Rs. 1500.00    Available  
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   03001234506     Rs. 3300.00    Unavailable
+Doctor ID: Appointment date (YYYY-MM-DD): Appointment time (HH:MM, 24-hour): 
+[ERROR] Dr. Bilal Hussain is currently unavailable.
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      BOOK NEW APPOINTMENT
+================================================================
+Patient ID: Patient: Sara Ahmed Khan
+
+Doctors:
+ID     Name                   Specialization       Contact         Fee            Status     
+D001   Dr. Ahmed Raza         Cardiologist         03001234501     Rs. 3000.00    Available  
+D002   Dr. Sana Malik         Neurologist          03001234502     Rs. 3500.00    Available  
+D003   Dr. Hina Farooq        Dermatologist        03001234503     Rs. 2000.00    Available  
+D004   Dr. Usman Tariq        General Physician    03001234504     Rs. 1000.00    Available  
+D005   Dr. Ayesha Khan        Pediatrician         03001234505     Rs. 1500.00    Available  
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   03001234506     Rs. 3300.00    Unavailable
+Doctor ID: Appointment date (YYYY-MM-DD): Appointment time (HH:MM, 24-hour): 
+[SUCCESS] Appointment booked.
+------------------------------------------------------------------------------
+  Appointment ID          : A002
+  Patient                 : P002 - Sara Ahmed Khan
+  Doctor                  : D002 - Dr. Sana Malik (Neurologist)
+  Date                    : 2030-01-15
+  Time                    : 11:00
+  Status                  : Scheduled
+------------------------------------------------------------------------------
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                        ALL APPOINTMENTS
+================================================================
+ID     Patient                  Doctor                   Date        Time   Status    
+------------------------------------------------------------------------------
+A001   P001 Ali Khan            D001 Dr. Ahmed Raza      2030-01-15  10:00  Scheduled 
+A002   P002 Sara Ahmed Khan     D002 Dr. Sana Malik      2030-01-15  11:00  Scheduled 
+------------------------------------------------------------------------------
+Total: 2 appointment(s)
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                    SEARCH APPOINTMENT BY ID
+================================================================
+Enter appointment ID (e.g. A001): ------------------------------------------------------------------------------
+  Appointment ID          : A001
+  Patient                 : P001 - Ali Khan
+  Doctor                  : D001 - Dr. Ahmed Raza (Cardiologist)
+  Date                    : 2030-01-15
+  Time                    : 10:00
+  Status                  : Scheduled
+------------------------------------------------------------------------------
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                    SEARCH APPOINTMENT BY ID
+================================================================
+Enter appointment ID (e.g. A001): 
+[ERROR] No appointment found with ID A999.
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                    APPOINTMENTS BY PATIENT
+================================================================
+Patient ID: ID     Patient                  Doctor                   Date        Time   Status    
+------------------------------------------------------------------------------
+A001   P001 Ali Khan            D001 Dr. Ahmed Raza      2030-01-15  10:00  Scheduled 
+------------------------------------------------------------------------------
+Total: 1 appointment(s)
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                     APPOINTMENTS BY DOCTOR
+================================================================
+Doctor ID: ID     Patient                  Doctor                   Date        Time   Status    
+------------------------------------------------------------------------------
+A001   P001 Ali Khan            D001 Dr. Ahmed Raza      2030-01-15  10:00  Scheduled 
+------------------------------------------------------------------------------
+Total: 1 appointment(s)
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                       CANCEL APPOINTMENT
+================================================================
+Appointment ID: ------------------------------------------------------------------------------
+  Appointment ID          : A001
+  Patient                 : P001 - Ali Khan
+  Doctor                  : D001 - Dr. Ahmed Raza (Cardiologist)
+  Date                    : 2030-01-15
+  Time                    : 10:00
+  Status                  : Scheduled
+------------------------------------------------------------------------------
+Cancel this appointment? (y/n): 
+[SUCCESS] Appointment A001 cancelled. The time slot is free again.
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                      BOOK NEW APPOINTMENT
+================================================================
+Patient ID: Patient: Ali Khan
+
+Doctors:
+ID     Name                   Specialization       Contact         Fee            Status     
+D001   Dr. Ahmed Raza         Cardiologist         03001234501     Rs. 3000.00    Available  
+D002   Dr. Sana Malik         Neurologist          03001234502     Rs. 3500.00    Available  
+D003   Dr. Hina Farooq        Dermatologist        03001234503     Rs. 2000.00    Available  
+D004   Dr. Usman Tariq        General Physician    03001234504     Rs. 1000.00    Available  
+D005   Dr. Ayesha Khan        Pediatrician         03001234505     Rs. 1500.00    Available  
+D006   Dr. Bilal Hussain      Orthopedic Surgeon   03001234506     Rs. 3300.00    Unavailable
+Doctor ID: Appointment date (YYYY-MM-DD): Appointment time (HH:MM, 24-hour): 
+[SUCCESS] Appointment booked.
+------------------------------------------------------------------------------
+  Appointment ID          : A003
+  Patient                 : P001 - Ali Khan
+  Doctor                  : D001 - Dr. Ahmed Raza (Cardiologist)
+  Date                    : 2030-01-15
+  Time                    : 10:00
+  Status                  : Scheduled
+------------------------------------------------------------------------------
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                   UPDATE APPOINTMENT STATUS
+================================================================
+Appointment ID: ------------------------------------------------------------------------------
+  Appointment ID          : A002
+  Patient                 : P002 - Sara Ahmed Khan
+  Doctor                  : D002 - Dr. Sana Malik (Neurologist)
+  Date                    : 2030-01-15
+  Time                    : 11:00
+  Status                  : Scheduled
+------------------------------------------------------------------------------
+  [1] Completed
+  [2] Cancelled
+  [3] Back
+Enter your choice: 
+[SUCCESS] Appointment A002 marked as Completed.
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                   UPDATE APPOINTMENT STATUS
+================================================================
+Appointment ID: ------------------------------------------------------------------------------
+  Appointment ID          : A001
+  Patient                 : P001 - Ali Khan
+  Doctor                  : D001 - Dr. Ahmed Raza (Cardiologist)
+  Date                    : 2030-01-15
+  Time                    : 10:00
+  Status                  : Cancelled
+------------------------------------------------------------------------------
+  [1] Completed
+  [2] Cancelled
+  [3] Back
+Enter your choice: 
+[ERROR] Only a Scheduled appointment can be completed (current status: Cancelled).
+
+================================================================
+                     APPOINTMENT MANAGEMENT
+================================================================
+  [1] Book New Appointment
+  [2] View All Appointments
+  [3] Search Appointment by ID
+  [4] View Appointments by Patient
+  [5] View Appointments by Doctor
+  [6] Update Appointment Status
+  [7] Cancel Appointment
+  [8] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                         GENERATE BILL
+================================================================
+Appointment ID: ------------------------------------------------------------------------------
+  Appointment ID          : A002
+  Patient                 : P002 - Sara Ahmed Khan
+  Doctor                  : D002 - Dr. Sana Malik (Neurologist)
+  Date                    : 2030-01-15
+  Time                    : 11:00
+  Status                  : Completed
+------------------------------------------------------------------------------
+  Consultation Fee        : Rs. 3500.00 (from doctor record)
+Additional charges (Rs., 0 for none): 
+[ERROR] Invalid amount. Enter a non-negative number with at most 2 decimals.
+Additional charges (Rs., 0 for none): 
+[SUCCESS] Bill B001 generated. Total: Rs. 4000.00
+------------------------------------------------------------------------------
+  Bill ID                 : B001
+  Patient ID              : P002
+  Appointment ID          : A002
+  Consultation Fee        : Rs. 3500.00
+  Additional Charges      : Rs. 500.00
+  Total Amount            : Rs. 4000.00
+  Amount Paid             : Rs. 0.00
+  Balance Due             : Rs. 4000.00
+  Payment Status          : Unpaid
+------------------------------------------------------------------------------
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                         GENERATE BILL
+================================================================
+Appointment ID: 
+[ERROR] A bill already exists for appointment A002.
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                         GENERATE BILL
+================================================================
+Appointment ID: 
+[ERROR] Bills can only be generated for Completed appointments (this one is Scheduled).
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                           ALL BILLS
+================================================================
+Bill   Patient Appt    Fee           Extra         Total          Paid           Status        
+------------------------------------------------------------------------------
+B001   P002    A002    Rs. 3500.00   Rs. 500.00    Rs. 4000.00    Rs. 0.00       Unpaid        
+------------------------------------------------------------------------------
+Total: 1 bill(s)
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                       SEARCH BILL BY ID
+================================================================
+Enter bill ID (e.g. B001): ------------------------------------------------------------------------------
+  Bill ID                 : B001
+  Patient ID              : P002
+  Appointment ID          : A002
+  Consultation Fee        : Rs. 3500.00
+  Additional Charges      : Rs. 500.00
+  Total Amount            : Rs. 4000.00
+  Amount Paid             : Rs. 0.00
+  Balance Due             : Rs. 4000.00
+  Payment Status          : Unpaid
+------------------------------------------------------------------------------
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                       SEARCH BILL BY ID
+================================================================
+Enter bill ID (e.g. B001): 
+[ERROR] No bill found with ID B9.
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                    PATIENT BILLING HISTORY
+================================================================
+Patient ID: Patient: P002 - Sara Ahmed Khan
+Bill   Patient Appt    Fee           Extra         Total          Paid           Status        
+------------------------------------------------------------------------------
+B001   P002    A002    Rs. 3500.00   Rs. 500.00    Rs. 4000.00    Rs. 0.00       Unpaid        
+------------------------------------------------------------------------------
+Total: 1 bill(s)
+  Total billed            : Rs. 4000.00
+  Outstanding             : Rs. 4000.00
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                     UPDATE PAYMENT STATUS
+================================================================
+Bill ID: ------------------------------------------------------------------------------
+  Bill ID                 : B001
+  Patient ID              : P002
+  Appointment ID          : A002
+  Consultation Fee        : Rs. 3500.00
+  Additional Charges      : Rs. 500.00
+  Total Amount            : Rs. 4000.00
+  Amount Paid             : Rs. 0.00
+  Balance Due             : Rs. 4000.00
+  Payment Status          : Unpaid
+------------------------------------------------------------------------------
+  [1] Paid
+  [2] Unpaid
+  [3] Partially Paid
+  [4] Back
+Enter your choice: Total amount paid so far (Rs.): 
+[SUCCESS] Payment status updated to Partially Paid.
+------------------------------------------------------------------------------
+  Bill ID                 : B001
+  Patient ID              : P002
+  Appointment ID          : A002
+  Consultation Fee        : Rs. 3500.00
+  Additional Charges      : Rs. 500.00
+  Total Amount            : Rs. 4000.00
+  Amount Paid             : Rs. 1000.00
+  Balance Due             : Rs. 3000.00
+  Payment Status          : Partially Paid
+------------------------------------------------------------------------------
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                     UPDATE PAYMENT STATUS
+================================================================
+Bill ID: ------------------------------------------------------------------------------
+  Bill ID                 : B001
+  Patient ID              : P002
+  Appointment ID          : A002
+  Consultation Fee        : Rs. 3500.00
+  Additional Charges      : Rs. 500.00
+  Total Amount            : Rs. 4000.00
+  Amount Paid             : Rs. 1000.00
+  Balance Due             : Rs. 3000.00
+  Payment Status          : Partially Paid
+------------------------------------------------------------------------------
+  [1] Paid
+  [2] Unpaid
+  [3] Partially Paid
+  [4] Back
+Enter your choice: 
+[SUCCESS] Payment status updated to Paid.
+------------------------------------------------------------------------------
+  Bill ID                 : B001
+  Patient ID              : P002
+  Appointment ID          : A002
+  Consultation Fee        : Rs. 3500.00
+  Additional Charges      : Rs. 500.00
+  Total Amount            : Rs. 4000.00
+  Amount Paid             : Rs. 4000.00
+  Balance Due             : Rs. 0.00
+  Payment Status          : Paid
+------------------------------------------------------------------------------
+
+================================================================
+                       BILLING MANAGEMENT
+================================================================
+  [1] Generate Bill
+  [2] View All Bills
+  [3] Search Bill by ID
+  [4] View Patient Billing History
+  [5] Update Payment Status
+  [6] Return to Main Menu
+================================================================
+Enter your choice: 
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                      HOSPITAL STATISTICS
+================================================================
+  Total patients          : 2
+  Total doctors           : 6
+  Total appointments      : 3
+    Scheduled             : 1
+    Completed             : 1
+    Cancelled             : 1
+  Total bills generated   : 1
+  Revenue (paid bills)    : Rs. 4000.00
+  Partial payments held   : Rs. 0.00
+  Outstanding balance     : Rs. 0.00
+================================================================
+
+================================================================
+                           MAIN MENU
+================================================================
+  [1] Patient Management
+  [2] Doctor Management
+  [3] Appointment Management
+  [4] Billing Management
+  [5] View Hospital Statistics
+  [6] Exit System
+================================================================
+Enter your choice: 
+================================================================
+                 THANK YOU FOR USING THE SYSTEM
+================================================================
+All data has been saved. Goodbye!
